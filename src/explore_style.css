@@ -3,6 +3,9 @@
 }
 @media screen and (max-width: 900px) {
     /* Adjust font-size and padding of the navigation */
+    body{
+        height: 100vh;
+    }
     nav {
       font-size: 0.6rem;
     }
