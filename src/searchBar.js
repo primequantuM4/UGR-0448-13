@@ -19,4 +19,5 @@ function showSearchedValue() {
         alert("Country not found, possible countries: Ethiopia, Bali, Brazil");
     }
   }
-  alert("searching works, try searching Ethiopia, Bali or Brazil");
+  function delayAlert(){  alert("searching works, try searching Ethiopia, Bali or Brazil");}
+  setTimeout(delayAlert,1000);
