@@ -4,92 +4,85 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "style.css">
+    <link rel="stylesheet" href="explore_style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia|Oswald">
+    <script src = "explore_js.js" defer></script>
     <title>Explore</title>
 </head>
+
 <body>
-     <nav>
-        <a href ="home.html"> Home </a>
-        <a href = "explore.html">Explore</a>
-        <a href = "food_and_drinks.html"> Food and drinks</a>
-        <a href= "accommodations.html">Accommodations</a>
-        <a href = "contact.html"> Contact</a>
-        <a href= "about_us.html">About us</a>
+     <nav class = "nav">
+        <a class = "nav__link" href ="home.html"> Home </a>
+        <a class = "nav__link" href = "explore.html">Explore</a>
+        <a class = "nav__link" href = "food_and_drinks.html"> Food and drinks</a>
+        <a class = "nav__link" href= "accommodations.html">Accommodations</a>
+        <a class = "nav__link" href = "contact.html"> Contact</a>
+        <a class = "nav__link" href= "about_us.html">About us</a>
     </nav>
-    <h1>Explore!</h1>
+    <h1 class = "header">Explore!</h1>
     <section role = "information_card">
-        <div>
-            <button>
-                <h2>Ethiopia</h2>
-                <a href ="accommodations.html"><img src= "images/Ethiopia.jpg" width = "100" alt = "A picture of Ethiopia's siemen mountains"></a>
+        <div class = "card">
+            <button class = "card__dropdown-btn">
+                <h2 class = "card__dropdown-btn__heading">Ethiopia</h2>
+                <img class = "card__dropdown-btn__image" src= "images/Ethiopia.jpg" width = "60" alt = "A picture of Ethiopia's siemen mountains">
             </button>
-            <p>Known for her uniqueness and diversity, Ethiopia has a lot to offer. From breath-taking views and atmosphere to tasty cuisines. Ethiopia is located at the heart of the horn of Africa. </p>
-            <p>Check out Ethiopia's <a href ="food_and_drinks.html">Food and Drinks</a> section</p>
-            <p>Temperature: Normal (20-25 degrees on average)</p>
-            <p>Overall experience: Amazing</p>
-            <section role ="slideshow">
-                <p>Check out more from Ethiopia: </p>
-                <img src = "images/Dallol.jpg" width="200" alt = "A picture of a place called dallol in Ethiopia.">
-                <img src = "images/Ethiopia1.jpg" width = "200" alt = "A picture of a waterfall and a grassy land in Ethiopia">
-                <img src = "images/Ethiopia2.jpg" width="200" alt = "A photo of a city in Ethiopia">
-                <img src = "images/Sofumer.jpg" width="200" alt = "Sofumer cave in the day.">
+            <section class = "card__hidden-content">
+                <p class = "card__hidden-content__text">Known for her uniqueness and diversity, Ethiopia has a lot to offer. From breath-taking views and atmosphere to tasty cuisines. Ethiopia is located at the heart of the horn of Africa. </p>
+                <p class = "card__hidden-content__text">Check out Ethiopia's <a href ="food_and_drinks.html">Food and Drinks</a> section</p>
+                <p class = "card__hidden-content__text">Temperature: Normal (20-25 degrees on average)</p>
+                <p class = "card__hidden-content__text">Overall experience: Amazing</p>
+                <p class = "card__hidden-content__text">Check out more from Ethiopia: </p>
+                <img class = "card__hidden-content__img" src = "images/Dallol.jpg" width="200" alt = "A picture of a place called dallol in Ethiopia.">
+                <img class = "card__hidden-content__img" src = "images/Ethiopia1.jpg" width = "200" alt = "A picture of a waterfall and a grassy land in Ethiopia">
+                <img class = "card__hidden-content__img" src = "images/Ethiopia2.jpg" width="200" alt = "A photo of a city in Ethiopia">
+                <img class = "card__hidden-content__img" src = "images/Sofumer.jpg" width="200" alt = "Sofumer cave in the day.">
             </section>
         </div>
-        <div>
-            <button>
-                <h2>Bali</h2>
-                <a href ="accommodations.html"><img src = "images/bali.jpg" width = "100" alt = "A picture of a site in bali"></a>
+        <div clas = "card">
+            <button class = "card__dropdown-btn">
+                <h2 class = "card__dropdown-btn__heading">Bali</h2>
+                <img class = "card__dropdown-btn__image" src = "images/bali.jpg" width = "60" alt = "A picture of a site in bali">
             </button>
-            <p>If you want to get in touch with nature then bali is the right choice! With beautiful sites to explore bali offers a wide range of culture one will expect from indonesia. </p>
-            <p>Check out Bali's <a href ="food_and_drinks.html">Food and Drinks</a> section</p>
-            <p>Temperature: tropical (27-31 degrees on average)</p>
-            <p>Overall experience: Amazing</p>
-            <section role ="slideshow">
-                <p>Check out more from Bali: </p>
-                <img src = "images/Uluwatu.jpg" width="200" alt = "A part of Uluwatu temple that is overlooking a lake ">
-                <img src = "images/ulun.jpg" width = "200" alt = "A place called Pura ulun Danu Bratan in bali">
-                <img src = "images/Nusaduabeach.jpg" width="200" alt = "A drone shot photo of a beach in bali  ">
+            <section class = "card__hidden-content">
+                <p class = "card__hidden-content__text">If you want to get in touch with nature then bali is the right choice! With beautiful sites to explore bali offers a wide range of culture one will expect from indonesia. </p>
+                <p class = "card__hidden-content__text">Check out Bali's <a href ="food_and_drinks.html">Food and Drinks</a> section</p>
+                <p class = "card__hidden-content__text">Temperature: tropical (27-31 degrees on average)</p>
+                <p class = "card__hidden-content__text">Overall experience: Amazing</p>
+                <p class = "card__hidden-content__text">Check out more from Bali: </p>
+                <img class = "card__hidden-content__img" src = "images/Uluwatu.jpg" width="200" alt = "A part of Uluwatu temple that is overlooking a lake ">
+                <img class = "card__hidden-content__img"  src = "images/ulun.jpg" width = "200" alt = "A place called Pura ulun Danu Bratan in bali">
+                <img class = "card__hidden-content__img"  src = "images/Nusaduabeach.jpg" width="200" alt = "A drone shot photo of a beach in bali  ">
             </section>
         </div>
-        <div>
-            <button>
-                <h2>Brazil</h2>
-                <a href = "accommodations.html"><img src = "images/brazil.jpg" width = "100" alt = "A picture of rio de janerio"></a>
+        <div class = "card">
+            <button class = "card__dropdown-btn">
+                <h2 class = "card__dropdown-btn__heading">Brazil</h2>
+                <img  class = "card__dropdown-btn__image" src = "images/brazil.jpg" width = "60" alt = "A picture of rio de janerio">
             </button>
-            <p>Known for the one and only Amazon rainforest, Brazil has a lot to offer. It is the home of many legendary football players from Rolandinho to Neymar. If you want to go to a place where you want to dance and eat tasty dishes then brazil is the right choice.</p>
-            <p>Check out Brazil's <a href ="food_and_drinks.html">Food and Drinks</a> section</p>
-            <p>Temperature: Normal (20-25 degrees on average)</p>
-            <p>Overall experience: Amazing</p>
-            <section role ="slideshow">
-                <p>Check out more from Brazil: </p>
-                <img src = "images/IgazufallsBrazil.jpg" width="200" alt = "A waterfall in brazil ">
-                <img src = "images/amazon.jpg" width = "200" alt = "A picture of a waterfall and a grassy land in Ethiopia">
-                <img src = "images/Ethiopia2.jpg" width="200" alt = "A picutre of a city in Ethiopia">
+            <section class = "card__hidden-content">
+                <p class = "card__hidden-content__text">Known for the one and only Amazon rainforest, Brazil has a lot to offer. It is the home of many legendary football players from Rolandinho to Neymar. If you want to go to a place where you want to dance and eat tasty dishes then brazil is the right choice.</p>
+                <p class = "card__hidden-content__text">Check out Brazil's <a href ="food_and_drinks.html">Food and Drinks</a> section</p>
+                <p class = "card__hidden-content__text">Temperature: Normal (20-25 degrees on average)</p>
+                <p class = "card__hidden-content__text">Overall experience: Amazing</p>
+                <p class = "card__hidden-content__text">Check out more from Brazil: </p>
+                <img class = "card__hidden-content__img" src = "images/IgazufallsBrazil.jpg" width="200" alt = "A waterfall in brazil ">
+                <img class = "card__hidden-content__img" src = "images/amazon.jpg" width = "200" alt = "A picture of a waterfall and a grassy land in Ethiopia">
+                <img class = "card__hidden-content__img" src = "images/Ethiopia2.jpg" width="200" alt = "A picutre of a city in Ethiopia">
             </section>
         </div>
-        <!--audio section-->
     </section>
+
     <p>Hear the vibrance of the world, ranging from musics to the sound of nature, our best picks for you!</p>
-    <section>
-        <div>
-            <audio src="audios/birds.mp3" controls aria-describedby="description-birds"></audio>
-            <div id ="description-birds">
-                <button> Description</button>
-                <p>Sounds of Birds chirping in a quiet area</p>
-            </div>
+    <section class = "sounds">
+        <div class="sounds__content">
+            <audio class = "sounds__content__audio" src="audios/birds.mp3" controls></audio>
         </div>
         <div>
-            <audio src="audios/rainforest.mp3" controls aria-describedby="description-rainforest"></audio>
-            <div id="description-rainforest">
-                <button>Description</button>
-                <p>A sound of rain is heard from a rainforest and sounds of some animals in the rain forest.</p>
-            </div>
+            <audio class = "sounds__content__audio" src="audios/rainforest.mp3" controls></audio>
         </div>
         <div>
-            <audio src = "audios/waves.mp3" controls aria-describedby="description-waves"></audio>
-            <div id = "description-waves">
-                <button>Description</button>
-                <p>Waves of the ocean are heard crashing into one another.</p>
-            </div>
+            <audio class = "sounds__content__audio"  src = "audios/waves.mp3" controls></audio>
         </div>
     </section>
 </body>

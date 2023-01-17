@@ -1,0 +1,66 @@
+@media (max-width: 768px) {
+    /* Make the font size smaller on smaller screens */
+    a{
+        font-size: 0.6rem;
+    }
+    body {
+        font-size: 0.8rem;
+    }
+
+    /* Change the layout of the nav bar on smaller screens */
+    nav {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+body {
+    margin: 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: "Oswald", sans-serif;
+    background-image: url('images/city.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav {
+    background-color: rgb(2, 63, 123);
+    text-align: center;
+    padding: 2% 0;
+    display: flex;
+    justify-content: space-between;
+}
+.contact-information__list{
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    font-family: Arial Narrow;
+    font-size: 1 rem;
+    color: rgb(240, 248, 255);
+}
+a:hover {
+    color: aquamarine;
+}
+.information input,button{
+    padding: 0% 2%;
+    border: none;
+    border-radius: 10px;
+}
+.information input{
+    width: 30%;
+    height: 60px;
+    border-radius: 50px;
+}
+.information button:hover{
+    background-color: aquamarine;
+}
+footer {
+    background-color: rgb(2, 63, 123);
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}

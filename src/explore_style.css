@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+}
+@media screen and (max-width: 900px) {
+    /* Adjust font-size and padding of the navigation */
+    nav {
+      font-size: 0.6rem;
+    }
+    a {
+        font-size: 0.6rem;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    body{
+        font-size: 0.8rem;
+    }
+    .sounds{
+        flex-direction: column;
+    }
+    .sounds__content__audio{
+        width: 35%;
+        margin: 7% 0;
+    }
+    .card__dropdown-btn__image{
+        width: 30%;
+    }
+    .card__hidden-content__img{
+        width: 40%;
+    }
+}
+@media screen and (max-width:300px){
+    .card__dropdown-btn__heading{
+        font-size: 0.8rem;
+    }
+}
+body{
+    background-image: url('images/cityBackground.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+.card__hidden-content--hidden {
+    display: none;
+}
+.sounds{
+    display: flex;
+    justify-content: space-around;
+}
+.card__dropdown-btn{
+    width: 40vmin;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    border: none;
+    background: none;
+    background-color: rgba(0,0,0, 0.3);
+    margin: 2% 0 2% 30%;
+    border-radius: 5%;
+}
+.card__dropdown-btn:hover{
+    background-color: rgba(0,0,0, 1);
+}
+.card__dropdown-btn__heading{
+    color: white;
+}
+section [role ="information-card"]{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.card__hidden-content{
+    background-color: rgba(132,143,134, 0.7);
+    margin: 0;
+    border-radius: 5px;
+    width: 50%;
+    position: relative;
+    transform: translate(50%);
+}

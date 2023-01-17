@@ -1,0 +1,21 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(112,111,111);
+}
+.top-content{
+    padding: 10%;
+    background-image: url("images/foods.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.food-info__content{
+  list-style-type: none;  
+  display: none;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.food-info__content__item__img{
+    border-radius: 10px;
+}

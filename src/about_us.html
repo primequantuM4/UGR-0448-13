@@ -4,34 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "about_us_style.css">
+    <link rel="stylesheet" href="style.css">
     <title>About us</title>
 </head>
 <body>
-    <nav>
-        <a href ="home.html"> Home </a>
-        <a href = "explore.html">Explore</a>
-        <a href = "food_and_drinks.html"> Food and drinks</a>
-        <a href= "accommodations.html">Accommodations</a>
-        <a href = "contact.html"> Contact</a>
-        <a href= "about_us.html">About us</a>
+    <nav class = "nav">
+        <a class = "nav__link" href ="home.html"> Home </a>
+        <a class= "nav__link" href = "explore.html">Explore</a>
+        <a class= "nav__link" href = "food_and_drinks.html"> Food and drinks</a>
+        <a class= "nav__link" href= "accommodations.html">Accommodations</a>
+        <a class= "nav__link" href = "contact.html"> Contact</a>
+        <a class= "nav__link" href= "about_us.html">About us</a>
     </nav>
-    <header><h1>About us</h1></header>
-    <section>
-        <img src = "images/place.jpg" alt ="A lake with surrounding area of green">
+    <header class ="header">
+        <h1 class="header__title">About Us</h1>
+    </header>
+    <section class = "image">
+        <img class = "image__content" src = "images/place.jpg" alt ="A lake with surrounding area of green">
     </section>
-    <section>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque distinctio ipsum amet quibusdam temporibus! Animi explicabo amet cupiditate harum nisi, officiis adipisci nemo deleniti corrupti dignissimos possimus totam quo tempore!</p>
+    <section class ="plain-content">
+        <p class= "plain-content__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque distinctio ipsum amet quibusdam temporibus! Animi explicabo amet cupiditate harum nisi, officiis adipisci nemo deleniti corrupti dignissimos possimus totam quo tempore!</p>
     </section><hr>
-    <footer>
-        <a href = "explore.html">our services</a> 
-        <section>
-            <p>social-links</p>
-            <a href = "facebook.com"><img src = "images/facebook.jpg" alt = "facebook logo" width ="25"></a>
-            <a href = "instagram.com"><img src = "images/instagram.jpg" alt = "instagram logo" width="25"></a> 
+    <footer class = "footer">
+        <section class = "footer__content">
+          <a class = "footer__content__link" href = "explore.html">our services</a> 
+        </section>
+        <section class = "footer__content">
+            <p class = "footer__content__text">social-links</p>
+            <a class = "footer__content__link" href = "facebook.com"><img src = "images/facebook.jpg" alt = "facebook logo" width ="25"></a>
+            <a class = "footer__content__link" href = "instagram.com"><img src = "images/instagram.jpg" alt = "instagram logo" width="25"></a> 
             <a href = "linkedin.com"><img src = "images/linkedin.jpg" alt = "linkedin logo" width = "25"></a>
-            <p> More info: </p>
-            <a href = "contact.html"> Contact</a>
-            <a href = "about_us.html"> About us</a>
+        </section>
+        <section class = "footer__content">
+            <p class = "footer__content__text"> More info: </p>
+            <a class = "footer__content__link" href = "contact.html"> Contact</a>
+            <a class = "footer__content__link" href = "about_us.html"> About us</a>
         </section>
     </footer>
 </body>

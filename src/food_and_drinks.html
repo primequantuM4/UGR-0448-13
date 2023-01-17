@@ -4,92 +4,102 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "style.css">
+    <link rel="stylesheet" href ="food_and_drinks_style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia|Oswald">
+    <script src = "searchBar.js"></script>
     <title>Food and Drinks</title>
 </head>
 <body>
-    <nav>
-        <a href ="home.html"> Home </a>
-        <a href = "explore.html">Explore</a>
-        <a href = "food_and_drinks.html"> Food and drinks</a>
-        <a href= "accommodations.html">Accommodations</a>
+    <nav class = "nav">
+        <a class = "nav__link" href ="home.html"> Home </a>
+        <a class = "nav__link" href = "explore.html">Explore</a>
+        <a class = "nav__link" href = "food_and_drinks.html"> Food and drinks</a>
+        <a class = "nav__link" href= "accommodations.html">Accommodations</a>
         <a href = "contact.html"> Contact</a>
         <a href= "about_us.html">About us</a>
     </nav>
-    <h1>Food and Drinks</h1>
-    <label for="food-search">
-        <img src="images/search.jpg" alt ="search icon" width="10">
-    </label>
-    <input placeholder="What countries food would you like to see" id="food-search">
-    <button>search</button>
-    <section role ="food information">
-        <ul>
-            <h2>Ethiopia</h2><hr>
-            <li>
-                <p>kitfo</p>
-                <img src = "images/Kitfo.jpg" alt = "An image of kitfo; a traditional food in Ethiopia, made from grounded raw beef meat" width = "200"> 
-                <p>Category: Foods</p>
+    <div class = "top-content">
+        <h1 class = "top-content__heading">Food and Drinks</h1>
+        <section class = "top-content__search">
+            <label for="search">
+                <img src="images/search.jpg" alt ="search icon" width="10">
+             </label>
+             <input class = "top-content__search__input" placeholder="What countries food would you like to see" id="search">
+            <button class = "top-content__search__button" onclick=" showSearchedValue()">search</button>
+        </section>
+    </div>
+    <section class = "food-info" role ="food information">
+        <ul class = "food-info__content" id = "Ethiopia">
+            <h2 class="food-info__content__heading">Ethiopia</h2><hr>
+            <li class = "food-info__content__item">
+                <p class = "food-info__content__item__text">kitfo</p>
+                <img class = "food-info__content__item__img" src = "images/Kitfo.jpg" alt = "An image of kitfo; a traditional food in Ethiopia, made from grounded raw beef meat" width = "200"> 
+                <p class = "food-info__content__item__text">Category: Foods</p>
             </li>
-            <li>
-                <p>Tej</p>
-                <img src = "images/tej.jpg" alt = "An image of a traditional alcoholic beverage in Ethiopia" width= "200"> 
-                <p> Category: Drinks</p>
+            <li class = "food-info__content__item">
+                <p class = "food-info__content__item__text">Tej</p>
+                <img class = "food-info__content__item__img" src = "images/tej.jpg" alt = "An image of a traditional alcoholic beverage in Ethiopia" width= "200"> 
+                <p class = "food-info__content__item__text"> Category: Drinks</p>
             </li>
-            <li>
-                <p>Doro wot</p>
-                <img src = "images/doro_wot.jpg" alt = "An image of Doro wot, a traditional food in Ethiopia, made from chicken" width = "200">
-                <p>Category: Food</p>
+            <li class = "food-info__content__item">
+                <p class = "food-info__content__item__text">Doro wot</p>
+                <img class = "food-info__content__item__img"  src = "images/doro_wot.jpg" alt = "An image of Doro wot, a traditional food in Ethiopia, made from chicken" width = "200">
+                <p class = "food-info__content__item__text">Category: Food</p>
                 
             </li>
-            <li>
-                <p>Shiro</p>
-                <img src = "images/shiro.jpg" alt = "Shiro; a traditional food in Ethiopia" width = "200">
-                <p>Category: Foods</p>
+            <li class="food-info__content__item">
+                <p class = "food-info__content__item__text">Shiro</p>
+                <img class = "food-info__content__item__img" src = "images/shiro.jpg" alt = "Shiro; a traditional food in Ethiopia" width = "200">
+                <p class="food-info__content__item__text">Category: Foods</p>
             </li>
         </ul>
-        <ul>
-            <h2>Bali</h2><hr>
+        <ul class = "food-info__content" id = "Bali">
+            <h2 class= "food-info__content__heading">Bali</h2><hr>
+            <li class= "food-info__content__item">
+                <p class= "food-info__content__item__text">Babi Guling</p>
+                <img class= "food-info__content__item__img" src = "images/babi_guling.jpg" alt = "An image of babi guling; a traditional way of pig roast stuffed with spices found in bali" width="200">
+                <p class= "food-info__content__item__text">Category: Food</p>
+            </li>
+            <li class= "food-info__content__item">
+                <p class= "food-info__content__item__text">Es cincau</p>
+                <img class = "food-info__content__item__img" src = "images/Es_cincau.jpg" alt = " green grass jelly drink with ice, coconut milk and syrup." width="200">
+                <p class= "food-info__content__item__text">Category: Drinks</p>
+            </li>
+            <li class= "food-info__content__item">
+                <p class= "food-info__content__item__text">Babi Guling</p>
+                <img class= "food-info__content__item__img" src = "images/ayam_betutu.jpg" alt = "dish of steamed or roasted chicken or duck" width="200">
+                <p class= "food-info__content__item__text">Category: Food</p>
+            </li>
             <li>
                 <p>Babi Guling</p>
                 <img src = "images/babi_guling.jpg" alt = "An image of babi guling; a traditional way of pig roast stuffed with spices found in bali" width="200">
                 <p>Category: Food</p>
             </li>
-            <li>
-                <p>Es cincau</p>
-                <img src = "images/Es_cincau.jpg" alt = " green grass jelly drink with ice, coconut milk and syrup." width="200">
-                <p>Category: Drinks</p>
-            </li>
-            <li>
-                <p>Babi Guling</p>
-                <img src = "images/ayam_betutu.jpg" alt = "dish of steamed or roasted chicken or duck" width="200">
-                <p>Category: Food</p>
-            </li>
-            <li>
-                <p>Babi Guling</p>
-                <img src = "images/babi_guling.jpg" alt = "An image of babi guling; a traditional way of pig roast stuffed with spices found in bali" width="200">
-                <p>Category: Food</p>
-            </li>
         </ul>
-        <h2>Brazil</h2><hr>
-            <div>
-                <p>Feijoada</p>
-                <img src = "images/Feijoada.jpg" alt = " A black bean and pork stew that is often served with farofa, toasted cassava " width = "200"> 
-                <p>Category: Foods</p>
-            </div>
-            <div>
-                <p>Caipirnha</p>
+        <ul class = "food-info__content" id = "Brazil">
+            <h2 class="food-info__content__heading">Brazil</h2><hr>
+            <li class = "food-info__content__item">
+                <p class= "food-info__content__item__text">Feijoada</p>
+                <img class= "food-info__content__item__img" src = "images/Feijoada.jpg" alt = " A black bean and pork stew that is often served with farofa, toasted cassava " width = "200"> 
+                <p class= "food-info__content__item__text">Category: Foods</p>
+            </li>
+            <li class = "food-info__content__item">
+                <p class= "food-info__content__item__text">Caipirnha</p>
                 <img src = "images/caipirnha.jpg" alt = "Brazil's national cocktail, made with cachaça, sugar, and lime" width= "200"> 
-                <p> Category: Drinks</p>
-            </div>
-            <div>
-                <p>Moqueca</p>
-                <img src = "images/Moqueca.jpg" alt = "An image of Moqueca; typically made with shrimp or fish as a base." width = "200">
-                <p>Category: Food</p>
-            </div>
-            <div>
-                <p>Deep fried pastel</p>
-                <img src = "images/Pastel.jpg" alt = "An image of deep fried pastel" width = "200">
-                <p>Category: Foods</p>
-        </div>
+                <p class= "food-info__content__item__text"> Category: Drinks</p>
+            </li>
+            <li class = "food-info__content__item">
+                <p class= "food-info__content__item__text">Moqueca</p>
+                <img class= "food-info__content__item__img"  src = "images/Moqueca.jpg" alt = "An image of Moqueca; typically made with shrimp or fish as a base." width = "200">
+                <p class= "food-info__content__item__text">Category: Food</p>
+            </li>
+            <li class = "food-info__content__item">
+                <p class= "food-info__content__item__text">Deep fried pastel</p>
+                <img class= "food-info__content__item__img"  src = "images/Pastel.jpg" alt = "An image of deep fried pastel" width = "200">
+                <p class= "food-info__content__item__text">Category: Foods</p>
+            </li>
+        </ul>
     </section>
 </body>
 </html>

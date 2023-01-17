@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "style.css">
+    <link rel ="stylesheet" href ="Accomodations_style.css">
+    <script src="searchBar.js"></script>
     <title>Accommodations</title>
 </head>
 <body>
@@ -15,107 +18,116 @@
         <a href = "contact.html"> Contact</a>
         <a href= "about_us.html">About us</a>
     </nav>
-    <label for="table-search">
-        <img src="images/search.jpg" alt ="search icon" width="10">
-    </label>
-    <input placeholder="What countries info would you like to see" id="table-search">
-    <button>search</button>
-    <section role = "tabular-information">
-        <heading><h1>Ethiopia</h1></heading><hr>
-        <table>
-            <tr>
-                <th>Expense type</th>
-                <th>Hotel Costs</th>
-                <th>Travel expenses</th>
-                <th>Activity costs</th>
-                <th>Extras</th>
-            </tr>
-            <tr>
-                <td>Cheaper option</td>
-                <td>30$ per night (2-3 star hotel)</td>
-                <td>1000$</td>
-                <td>100$ - 300$ </td>
-                <td> 40$</td>
-            </tr>
-            <tr>
-                <td>Medium option</td>
-                <td>50$ per night (3-4 star hotel)</td>
-                <td>2000$</td>
-                <td>200$ - 600$ </td>
-                <td> 60$</td>
-            </tr>
-            <tr>
-                <td>Full experience</td>
-                <td>100$ per night (4-5 star hotel)</td>
-                <td>4000$</td>
-                <td>800$ - 1200$ </td>
-                <td> 80$</td>
-            </tr>
-        </table>
-    </section>
-    <heading><h1>Bali</h1></heading><hr>
-        <table>
-            <tr>
-                <th>Expense type</th>
-                <th>Hotel Costs</th>
-                <th>Travel expenses</th>
-                <th>Activity costs</th>
-                <th>Extras</th>
-            </tr>
-            <tr>
-                <td>Cheaper option</td>
-                <td>40$ per night (2-3 star hotel)</td>
-                <td>1000$</td>
-                <td>100$ - 300$ </td>
-                <td> 50$</td>
-            </tr>
-            <tr>
-                <td>Medium option</td>
-                <td>65$ per night (3-4 star hotel)</td>
-                <td>2100$</td>
-                <td>200$ - 800$ </td>
-                <td> 60$</td>
-            </tr>
-            <tr>
-                <td>Full experience</td>
-                <td>200$ per night (4-5 star hotel)</td>
-                <td>5000$</td>
-                <td>900$ - 1500$ </td>
-                <td> 80$</td>
-            </tr>
-        </table>
-    </section>
-    <heading><h1>Brazil</h1></heading><hr>
-        <table>
-            <tr>
-                <th>Expense type</th>
-                <th>Hotel Costs</th>
-                <th>Travel expenses</th>
-                <th>Activity costs</th>
-                <th>Extras</th>
-            </tr>
-            <tr>
-                <td>Cheaper option</td>
-                <td>20$ per night (2-3 star hotel)</td>
-                <td>800$</td>
-                <td>100$ - 300$ </td>
-                <td> 30$</td>
-            </tr>
-            <tr>
-                <td>Medium option</td>
-                <td>50$ per night (3-4 star hotel)</td>
-                <td>2000$</td>
-                <td>200$ - 600$ </td>
-                <td> 60$</td>
-            </tr>
-            <tr>
-                <td>Full experience</td>
-                <td>100$ per night (4-5 star hotel)</td>
-                <td>4000$</td>
-                <td>800$ - 1200$ </td>
-                <td> 80$</td>
-            </tr>
-        </table>
+    <div class = "top-content">
+        <h1 class = "top-content__heading">Accommodations</h1>
+        <section class = "top-content__search">
+            <label for="search">
+                <img src="images/search.jpg" alt ="search icon" width="10">
+             </label>
+             <input class = "top-content__search__input" placeholder="What countries info would you like to see" id="search">
+            <button class = "top-content__search__button" onclick=" showSearchedValue()">search</button>
+        </section>
+    </div>
+    <section class="card" role = "tabular-information">
+        <div  class= "card__container"id = "Ethiopia" class ="table">
+            <heading class="card__container__header"><h1>Ethiopia</h1></heading>
+            <table class= "card__container__table">
+                <tr>
+                    <th>Expense type</th>
+                    <th>Hotel Costs</th>
+                    <th>Travel expenses</th>
+                    <th>Activity costs</th>
+                    <th>Extras</th>
+                </tr>
+                <tr>
+                    <td>Cheaper option</td>
+                    <td>30$ per night (2-3 star hotel)</td>
+                    <td>1000$</td>
+                    <td>100$ - 300$ </td>
+                    <td> 40$</td>
+                </tr>
+                <tr>
+                    <td>Medium option</td>
+                    <td>50$ per night (3-4 star hotel)</td>
+                    <td>2000$</td>
+                    <td>200$ - 600$ </td>
+                    <td> 60$</td>
+                </tr>
+                <tr>
+                    <td>Full experience</td>
+                    <td>100$ per night (4-5 star hotel)</td>
+                    <td>4000$</td>
+                    <td>800$ - 1200$ </td>
+                    <td> 80$</td>
+                </tr>
+            </table>
+        </div>
+        <div class= "card__container"  id = "Bali" class="table">
+            <heading class="card__container__header"><h1>Bali</h1></heading>
+            <table class= "card__container__table">
+                <tr>
+                    <th>Expense type</th>
+                    <th>Hotel Costs</th>
+                    <th>Travel expenses</th>
+                    <th>Activity costs</th>
+                    <th>Extras</th>
+                </tr>
+                <tr>
+                    <td>Cheaper option</td>
+                    <td>40$ per night (2-3 star hotel)</td>
+                    <td>1000$</td>
+                    <td>100$ - 300$ </td>
+                    <td> 50$</td>
+                </tr>
+                <tr>
+                    <td>Medium option</td>
+                    <td>65$ per night (3-4 star hotel)</td>
+                    <td>2100$</td>
+                    <td>200$ - 800$ </td>
+                    <td> 60$</td>
+                </tr>
+                <tr>
+                    <td>Full experience</td>
+                    <td>200$ per night (4-5 star hotel)</td>
+                    <td>5000$</td>
+                    <td>900$ - 1500$ </td>
+                    <td> 80$</td>
+                </tr>
+            </table>
+        </div>
+        <div class= "card__container"  id = "Brazil" class="table">
+            <heading class="card__container__header"><h1>Brazil</h1></heading>
+            <table class= "card__container__table">
+                <tr>
+                    <th>Expense type</th>
+                    <th>Hotel Costs</th>
+                    <th>Travel expenses</th>
+                    <th>Activity costs</th>
+                    <th>Extras</th>
+                </tr>
+                <tr>
+                    <td>Cheaper option</td>
+                    <td>20$ per night (2-3 star hotel)</td>
+                    <td>800$</td>
+                    <td>100$ - 300$ </td>
+                    <td> 30$</td>
+                </tr>
+                <tr>
+                    <td>Medium option</td>
+                    <td>50$ per night (3-4 star hotel)</td>
+                    <td>2000$</td>
+                    <td>200$ - 600$ </td>
+                    <td> 60$</td>
+                </tr>
+                <tr>
+                    <td>Full experience</td>
+                    <td>100$ per night (4-5 star hotel)</td>
+                    <td>4000$</td>
+                    <td>800$ - 1200$ </td>
+                    <td> 80$</td>
+                </tr>
+            </table>
+        </div>
     </section>
 </body>
 </html>
