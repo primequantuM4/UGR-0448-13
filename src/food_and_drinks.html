@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia|Oswald">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src = "searchBar.js"></script>
+    <title>Food and Drinks</title>
+    <style>
+        @media  screen and (max-width:768px) {
+            body{
+                font-size: 0.8rem; 
+            }
+            ul{
+                font-size: 0.6rem;
+            }
+        }
+        .top-content{
+            background-image: url(images/foods.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+            bottom: 20px
+        }
+        .food-info__content{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="list-unstyled d-flex justify-content-around bg-dark text-light py-4">
+          <li class="nav-item px-auto">
+            <a class="nav-link" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="explore.html">Explore</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="food_and_drinks.html">Food and Drinks</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="accommodations.html">Accommodations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about_us.html">About</a>
+          </li>
+        </ul>
+    </nav>
+    <div class = "top-content">
+        <h1 class = "text-center text-white py-5">Food and Drinks</h1>
+        <div class="py-5">
+            <div class="row gy-2 align-items-center justify-content-center w-100">
+                <div class="col-12 col-lg-6">
+                    <input type="text" class="form-control py-3 rounded-5" placeholder="what countries food would you like to see" id="search">
+                </div>
+                <div class="col-6 col-lg-2">
+                    <button class="btn btn-primary w-100 rounded-5" onclick="showSearchedValue()">search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class = "text-center" role ="food information">
+        <ul class = "food-info__content list-unstyled" id = "Ethiopia">
+            <h2>Ethiopia</h2><hr>
+            <li>
+                <p>kitfo</p>
+                <img  class="rounded-5" src = "images/Kitfo.jpg" alt = "An image of kitfo; a traditional food in Ethiopia, made from grounded raw beef meat" width = "200"> 
+                <p>Category: Foods</p>
+            </li>
+            <li class = "food-info__content__item">
+                <p>Tej</p>
+                <img  class="rounded-5" src = "images/tej.jpg" alt = "An image of a traditional alcoholic beverage in Ethiopia" width= "200"> 
+                <p> Category: Drinks</p>
+            </li>
+            <li>
+                <img  class="rounded-5"  src = "images/doro_wot.jpg" alt = "An image of Doro wot, a traditional food in Ethiopia, made from chicken" width = "200">
+                <p class = "food-info__content__item__text">Category: Food</p>
+                
+            </li>
+            <li>
+                <p>Shiro</p>
+                <img class="rounded-5" src = "images/shiro.jpg" alt = "Shiro; a traditional food in Ethiopia" width = "200">
+                <p>Category: Foods</p>
+            </li>
+        </ul>
+
+        <ul class = "food-info__content list-unstyled" id = "Bali">
+            <h2>Bali</h2><hr>
+            <li>
+                <p>Babi Guling</p>
+                <img class="rounded-5" src = "images/babi_guling.jpg" alt = "An image of babi guling; a traditional way of pig roast stuffed with spices found in bali" width="200">
+                <p>Category: Food</p>
+            </li>
+            <li>
+                <p>Es cincau</p>
+                <img class="rounded-5" src = "images/Es_cincau.jpg" alt = " green grass jelly drink with ice, coconut milk and syrup." width="200">
+                <p>Category: Drinks</p>
+            </li>
+            <li>
+                <p>Babi Guling</p>
+                <img class="rounded-5" src = "images/ayam_betutu.jpg" alt = "dish of steamed or roasted chicken or duck" width="200">
+                <p>Category: Food</p>
+            </li>
+            <li>
+                <p>Babi Guling</p>
+                <img class="rounded-5" src = "images/babi_guling.jpg" alt = "An image of babi guling; a traditional way of pig roast stuffed with spices found in bali" width="200">
+                <p>Category: Food</p>
+            </li>
+        </ul>
+        <ul class = "food-info__content list-unstyled" id = "Brazil">
+            <h2>Brazil</h2><hr>
+            <li class = "food-info__content__item">
+                <p>Feijoada</p>
+                <img class="rounded-5" src = "images/Feijoada.jpg" alt = " A black bean and pork stew that is often served with farofa, toasted cassava " width = "200"> 
+                <p class= "food-info__content__item__text">Category: Foods</p>
+            </li>
+            <li>
+                <p>Caipirnha</p>
+                <img class="rounded-5" src = "images/caipirnha.jpg" alt = "Brazil's national cocktail, made with cachaça, sugar, and lime" width= "200"> 
+                <p> Category: Drinks</p>
+            </li>
+            <li>
+                <p>Moqueca</p>
+                <img class="rounded-5" src = "images/Moqueca.jpg" alt = "An image of Moqueca; typically made with shrimp or fish as a base." width = "200">
+                <p>Category: Food</p>
+            </li>
+            <li>
+                <p>Deep fried pastel</p>
+                <img class="rounded-5" src = "images/Pastel.jpg" alt = "An image of deep fried pastel" width = "200">
+                <p>Category: Foods</p>
+            </li>
+        </ul>
+    </section>
+</body>
+</html>

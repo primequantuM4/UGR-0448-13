@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia|Oswald">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src = "explore_js.js" defer></script>
+    <title>Explore</title>
+    <style>
+        @media  screen and (max-width:768px) {
+            body{
+                font-size: 0.8rem; 
+            }
+            ul{
+                font-size: 0.6rem;
+            }
+        }
+        body{
+            background-image: url("images/cityBackground.jpg");
+            background-size: cover;
+            background-repeat: no-repeat    ;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul class="list-unstyled d-flex justify-content-around bg-dark text-light py-4">
+          <li class="nav-item px-auto">
+            <a class="nav-link" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="explore.html">Explore</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="food_and_drinks.html">Food and Drinks</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="accommodations.html">Accommodations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about_us.html">About</a>
+          </li>
+        </ul>
+    </nav>
+    <header class="text-center text-light">
+        <h1 class = "header">Explore!</h1>
+    </header>
+    <div class = "accordion-item w-75 py-2 mx-auto">
+        <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button bg-dark text-white rounded-4 p-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <div class="d-flex justify-content-between w-100">
+                    <p>Ethiopia</p>
+                    <img src= "images/Ethiopia.jpg" width = "60" alt = "A picture of Ethiopia's siemen mountains">
+                </div>
+            </button>
+        </h2>
+        <section id="collapseOne" class="accordion-collapse collapse show py-3 w-75 mx-auto" aria-labelledby="headingOne" data-bs-parent="#dropdown">
+            <div class="accordion-body bg-info rounded-3 text-white text-center">
+                <p class = "card__hidden-content__text">Known for her uniqueness and diversity, Ethiopia has a lot to offer. From breath-taking views and atmosphere to tasty cuisines. Ethiopia is located at the heart of the horn of Africa. </p>
+                <p class = "card__hidden-content__text">Check out Ethiopia's <a class="text-decoration-none text-muted" href ="food_and_drinks.html">Food and Drinks</a> section</p>
+                <p class = "card__hidden-content__text">Temperature: Normal (20-25 degrees on average)</p>
+                <p class = "card__hidden-content__text">Overall experience: Amazing</p>
+                <p class = "card__hidden-content__text">Check out more from Ethiopia: </p>
+                <div class="py-3">
+                    <img class = "w-25" src = "images/Ethiopia1.jpg" alt = "A picture of a waterfall and a grassy land in Ethiopia">
+                    <img class = "w-25" src = "images/Ethiopia2.jpg" alt = "A photo of a city in Ethiopia">
+                    <img class = "w-25" src = "images/Sofumer.jpg" alt = "Sofumer cave in the day.">
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class = "accordion-item w-75 py-2 mx-auto">
+        <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button bg-dark text-white rounded-4 p-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                <div class="d-flex justify-content-between w-100">
+                    <p>Bali</p>
+                    <img src= "images/bali.jpg" width = "60" alt = "A temple of bali">
+                </div>
+            </button>
+        </h2>
+        <section id="collapseTwo" class="accordion-collapse collapse show py-3 w-75 mx-auto" aria-labelledby="headingTwo" data-bs-parent="#dropdown">
+            <div class="accordion-body bg-info rounded-3 text-white text-center">
+                <p class = "card__hidden-content__text">If you want to get in touch with nature then bali is the right choice! With beautiful sites to explore bali offers a wide range of culture one will expect from indonesia.</p>
+                <p class = "card__hidden-content__text">Check out bali's <a class="text-decoration-none text-muted" href ="food_and_drinks.html">Food and Drinks</a> section</p>
+                <p class = "card__hidden-content__text">Temperature: Tropical (27-31 degrees on average)</p>
+                <p class = "card__hidden-content__text">Overall experience: Amazing</p>
+                <p class = "card__hidden-content__text">Check out more from Bali: </p>
+                <div class="py-3">
+                    <img class = "w-25" src = "images/Uluwatu.jpg" alt = "A part of Uluwatu temple that is overlooking a lake">
+                    <img class = "w-25" src = "images/ulun.jpg" alt = "A place called Pura ulun Danu Bratan in bali">
+                    <img class = "w-25" src = "images/Nusaduabeach.jpg" width="200" alt = "A drone shot photo of a beach in bali">
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class = "accordion-item w-75 py-2 mx-auto">
+        <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button bg-dark text-white rounded-4 p-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                <div class="d-flex justify-content-between w-100">
+                    <p>Brazil</p>
+                    <img src= "images/brazil.jpg" width = "60" alt = "A picture of Ethiopia's siemen mountains">
+                </div>
+            </button>
+        </h2>
+        <section id="collapseThree" class="accordion-collapse collapse show py-3 w-75 mx-auto" aria-labelledby="headingThree" data-bs-parent="#dropdown">
+            <div class="accordion-body bg-info rounded-3 text-white text-center">
+                <p>Known for the one and only Amazon rainforest, Brazil has a lot to offer. It is the home of many legendary football players from Rolandinho to Neymar. If you want to go to a place where you want to dance and eat tasty dishes then brazil is the right choice.</p>
+                <p>Check out Brazil's <a class="text-decoration-none text-muted" href ="food_and_drinks.html">Food and Drinks</a> section</p>
+                <p>Temperature: Normal (20-25 degrees on average)</p>
+                <p>Overall experience: Amazing</p>
+                <p>Check out more from Brazil: </p>
+                <div class="py-3">
+                    <img class = "w-25" src = "images/IgazufallsBrazil.jpg" alt = "A waterfall in brazil">
+                    <img class = "w-25" src = "images/ulun.jpg" alt = "A place called Pura ulun Danu Bratan in bali">
+                    <img class = "w-25" src = "images/Nusaduabeach.jpg" width="200" alt = "A drone shot photo of a beach in bali">
+                </div>
+            </div>
+        </section>
+    </div>
+        <!-- <div class = "card">
+            <button class = "card__dropdown-btn">
+                <h2 class = "card__dropdown-btn__heading">Brazil</h2>
+                <img  class = "card__dropdown-btn__image" src = "images/brazil.jpg" width = "60" alt = "A picture of rio de janerio">
+            </button>
+            <section class = "card__hidden-content">
+                <p class = "card__hidden-content__text">Known for the one and only Amazon rainforest, Brazil has a lot to offer. It is the home of many legendary football players from Rolandinho to Neymar. If you want to go to a place where you want to dance and eat tasty dishes then brazil is the right choice.</p>
+                <p class = "card__hidden-content__text">Check out Brazil's <a href ="food_and_drinks.html">Food and Drinks</a> section</p>
+                <p class = "card__hidden-content__text">Temperature: Normal (20-25 degrees on average)</p>
+                <p class = "card__hidden-content__text">Overall experience: Amazing</p>
+                <p class = "card__hidden-content__text">Check out more from Brazil: </p>
+                <img class = "card__hidden-content__img" src = "images/IgazufallsBrazil.jpg" width="200" alt = "A waterfall in brazil ">
+                <img class = "card__hidden-content__img" src = "images/amazon.jpg" width = "200" alt = "A picture of a waterfall and a grassy land in Ethiopia">
+                <img class = "card__hidden-content__img" src = "images/Ethiopia2.jpg" width="200" alt = "A picutre of a city in Ethiopia">
+            </section>
+        </div> -->
+
+    <p class="text-center text-white">Hear the vibrance of the world, ranging from musics to the sound of nature, our best picks for you!</p>
+    <section class = "row w-100 mx-auto my-5">
+        <div class="col-lg-4 col-sm-12">
+            <audio class = "w-100" src="audios/birds.mp3" controls></audio>
+        </div>
+        <div class="col-lg-4 col-sm-12">
+            <audio class = "w-100" src="audios/rainforest.mp3" controls></audio>
+        </div>
+        <div class="col-lg-4 col-sm-12">
+            <audio class = "w-100"  src = "audios/waves.mp3" controls></audio>
+        </div>
+    </section>
+</body>
+</html>
