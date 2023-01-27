@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia|Oswald">
     <script src="bootstrap/js/bootstrap.js" defer></script>
 
-
+    <!--I Couldn't achieve a search effect like I did on vanilla js using bootstrap so I reverted to vanilla js-->
     <script src = "searchBar.js"></script>
     <title>Food and Drinks</title>
     <style>
+        /*font-size decreasing cannot be done by bootstrap so I used @media*/
         @media  screen and (max-width:768px) {
             body{
                 font-size: 0.8rem; 
@@ -21,6 +22,7 @@
                 font-size: 0.6rem;
             }
         }
+        /*I couldn't achieve putting a background images using bootstrap so I added a bakground images using bootstrap*/
         .top-content{
             background-image: url(images/foods.jpg);
             background-size: cover;
